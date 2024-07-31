@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Advisor - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron bg-dark text-white">
+        <h1 class="display-1">Beer Advisor</h1>
+        <p class="tagline">Let me help you find the best beer for you!</p>
+    </div>
+    <div class="container">
+        <form action="list-beers" method="post">
+            <div class="form-group">
+                <label for="color">Select beer color:</label>
+                <select class="form-control" name="color" id="color" size="1">
+                    <option value="red">Red</option>
+                    <option value="amber">Amber</option>
+                    <option value="dark brown">Dark Brown</option>
+                    <option value="pale ale">Pale Ale</option>
+                    <option value="pale yellow">Pale Yellow</option>
+                    <option value="golden">Golden</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Find Beer</button>
+        </form>
+    </div>
+</body>
